@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/90/media/disneyparks_v0100/1/media/mediaplayer/homepage/mickey-minnie-16x9.jpg')
+        }
+        .container1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+        .jumbo{
+            border: 4px solid black;
+            box-shadow: 19px 19px 20px #784c4c;
+            position: relative;
+            background-color:rgb(223, 221, 219);
+            height: 10vw;
+            width: 90vw;
+            margin: 4vw 8vw 4vw 4vw;
+            text-align: -webkit-center;
+            font-size: 4vw;
+            padding-top: 3vw;
+            border-radius: 20%;
+        }
+        .bw{
+            filter: grayscale();
+            position: sticky;
+            height: 100%;
+            width: 100%;
+        }
+        .hotel{
+            margin: 2vw;
+            border: 4px solid black;
+            box-shadow: 19px 19px 20px #784c4c;
+            width: max-content;
+            display: inline-flex;
+        }
+        #hotel-description{
+            border: 4px solid black;
+            position: absolute;
+            margin: 5vw;
+            background-color: white;
+            padding: 1vw;
+            font-size: x-large;
+        }
+        img{
+            max-height: auto;
+            max-width: 100%;
+            object-fit: contain;
+        }
+        #hotel-description{
+            box-shadow: 19px 19px 20px #784c4c;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
+     <script src="https://kit.fontawesome.com/2c7fc28a2f.js"></script>
+</head>
+<body>
+    <img src="https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/90/media/disneyparks_v0100/1/media/mediaplayer/homepage/mickey-minnie-16x9.jpg" alt="" class="bw">
+   
+    <div class="container1">
+        <div class="jumbo">
+            Disney World Family Vacation 
+        </div>
+        <h1 class="hotel-title">Where we stayed!</h1>
+        <div class="hotel">
+            
+            <img src="https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/900/360/75/dam/disney-world/resorts/saratoga-springs-resort-and-spa/saratoga-springs-water-island-900x360.jpg?1655738853292" alt="Saratoga Springs Resprt" id="hotel">
+        </div>    
+        <span id="hotel-description">
+            <p id="hotel-text">Inspired by historic Saratoga Springs—a late-1800s’ New York retreat famous for its spas and horse racing—this charming, Victorian-style Resort hotel is nestled between rolling golf course greens and the shimmering Lake Buena Vista. Delight in stately Studios and multi-bedroom Villas, dazzling pools and a spa.</p>
+        </span>
+        <div class="carousel">
+
+        </div>
+    </div>
+    <div id="container">
+        <div id="toggleContainer">
+           <label>Carousel</label>
+           <div id="toggle">
+             <div id="outer3">
+                <div id="slider3"></div>
+             </div>
+             <label>Tiles</label>
+          </div>
+        </div>
+        <div id="galleryView">
+          <div id="galleryContainer">
+             <div id="leftView"></div>
+             <button id="navLeft" class="navBtns"><i class="fas fa-arrow-left fa-3x"></i></button>
+             <a id="linkTag" target="_blank">
+                <div id="mainView"></div>
+             </a>
+             <div id="rightView"></div>
+             <button id="navRight" class="navBtns"><i class="fas fa-arrow-right fa-3x"></i></button>
+          </div>
+        </div>
+        <div id="tilesView">
+          <div id="tilesContainer"></div>
+        </div>
+      </div>
+    </body>
+</html>
